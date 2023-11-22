@@ -8,15 +8,15 @@ app = Flask(__name__)
 def halaman_awal():
 	return render_template('home.html')
 
-@app.route('/portofolio/', methods=['GET'])
+@app.route('/portofolio/', methods=['POST'])
 def portofolio():
 	return render_template('portofolio.html')
 
-@app.route('/aboutme/', methods=['GET'])
+@app.route('/aboutme/', methods=['POST'])
 def aboutme():
 	return render_template('aboutme.html')
 
-@app.route('/contactme/', methods=['GET'])
+@app.route('/contactme/', methods=['POST'])
 def contactme():
 	return render_template('contactme.html')
 
